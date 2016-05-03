@@ -1,6 +1,9 @@
 # Inherit common CM stuff
 $(call inherit-product, vendor/cm/config/common.mk)
 
+# Inherit common PX stuff
+$(call inherit-product, vendor/pwnieexpress/config/common.mk)
+
 # Include CM audio files
 include vendor/cm/config/cm_audio.mk
 

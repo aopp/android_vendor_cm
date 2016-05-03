@@ -35,10 +35,10 @@ endif
 
 ifdef CM_NIGHTLY
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=cyanogenmodnightly
+    ro.rommanager.developerid=aoppnightly
 else
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=cyanogenmod
+    ro.rommanager.developerid=aopp
 endif
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
@@ -235,7 +235,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION_MAJOR = 12
+PRODUCT_VERSION_MAJOR = 0
 PRODUCT_VERSION_MINOR = 1
 PRODUCT_VERSION_MAINTENANCE = MAINLINE
 
@@ -351,7 +351,7 @@ ifndef CM_PLATFORM_REV
   # For internal SDK revisions that are hotfixed/patched
   # Reset after each CM_PLATFORM_SDK_VERSION release
   # If you are doing a release and this is NOT 0, you are almost certainly doing it wrong
-  CM_PLATFORM_REV := 1
+  CM_PLATFORM_REV := 0
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
