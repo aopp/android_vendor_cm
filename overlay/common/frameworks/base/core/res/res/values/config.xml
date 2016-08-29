@@ -33,6 +33,8 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$Receiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$ActiveReceiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$SecretCodeReceiver</item>
+        <item>com.google.android.setupwizard/.SetupWizardActivity</item>
+        <item>com.google.android.setupwizard/.SetupWizardExitActivity</item>
     </string-array>
 
     <!-- Force enabling of some services that could have been previously disabled -->
