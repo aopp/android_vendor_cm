@@ -52,7 +52,7 @@ except:
     device = product
 
 if not depsonly:
-    print("Device \"%s\" not found. Attempting to retrieve device repository from Android Open Pwn Project's Github (http://github.com/aopp)..." % device)
+    print("Device \"%s\" not found. Attempting to retrieve device repository from Android Open Pwn Project Github (http://github.com/aopp)..." % device)
 
 repositories = []
 
@@ -304,4 +304,4 @@ else:
             print("Done")
             sys.exit()
 
-print("Repository for \"%s\" not found in the Android Open Pwn Project's Github repository list. If this is an error, you may need to manually add it to your local_manifests/roomservice.xml." % device)
+print("Repository for \"%s\" not found in the Android Open Pwn Project Github repository list. If this is an error, you may need to manually add it to your local_manifests/roomservice.xml." % device)
