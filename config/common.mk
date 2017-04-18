@@ -14,7 +14,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.selinux=1
+    ro.build.selinux=0
 
 # Default notification/alarm sounds
 PRODUCT_PROPERTY_OVERRIDES += \
