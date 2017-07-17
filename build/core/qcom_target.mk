@@ -51,6 +51,9 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
         endif
     endif
 
+    # Allow building audio encoders
+    TARGET_USES_QCOM_MM_AUDIO := true
+
     # Enable extra offloading for post-805 targets
     ifneq ($(filter msm8992 msm8994,$(TARGET_BOARD_PLATFORM)),)
         qcom_flags += -DHAS_EXTRA_FLAC_METADATA
@@ -60,6 +63,9 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     ifneq ($(filter msm8996 msm8998,$(TARGET_BOARD_PLATFORM)),)
         TARGET_USES_COLOR_METADATA := true
     endif
+
+    # List of targets that use master side content protection
+    MASTER_SIDE_CP_TARGET_LIST := msm8996 msm8998
 
     TARGET_GLOBAL_CFLAGS += $(qcom_flags)
     TARGET_GLOBAL_CPPFLAGS += $(qcom_flags)
